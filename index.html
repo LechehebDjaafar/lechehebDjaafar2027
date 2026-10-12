@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lecheheb Djaafar</title>
+<meta name="description" content="Lecheheb Djaafar, computer science graduate and full-stack developer from Ouargla, Algeria.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23121212'/%3E%3Ctext x='16' y='22' font-size='16' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%23e8aa42'%3ELD%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Cairo:wght@400;500;600;700&display=swap">
+<script>
+document.documentElement.classList.add('js');
+try{var t=localStorage.getItem('theme');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')}catch(e){document.documentElement.dataset.theme='light'}
+</script>
+<style>
+:root{--bg:#fafaf5;--card:#fff;--text:#121212;--soft:#4d4d4d;--mid:#7d7d7d;--line:#cecdca;--band:#e9e9e7;--dsec:#121212;--accent:#214c7e;--gold:#e8aa42;--tagbg:#daeef8;--tagfg:#214c7e;
+--font:'matter','DM Sans','Inter',ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+[data-theme=dark]{--bg:#121212;--card:#1a1a19;--text:#fafaf5;--soft:#b9b9b4;--mid:#8a8a86;--line:#33332f;--band:#1b1b1a;--dsec:#0a0a09;--accent:#6cbcf4;--tagbg:#1c2a38;--tagfg:#6cbcf4}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--bg);color:var(--text);font-size:17px;line-height:1.5}
+[dir=rtl] body{font-family:'Cairo','Segoe UI',Tahoma,sans-serif}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+.sw *{transition:background-color .3s,color .3s,border-color .3s!important}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+section{padding:64px 0}
+h2{font-size:32px;line-height:1.25;font-weight:700;margin-bottom:24px}
+header{border-bottom:1px solid var(--line);background:var(--card);position:relative}
+#sheet{display:contents}
+#mb{display:none}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:64px;gap:16px}
+.logo{font-weight:700;text-decoration:none}
+nav{display:flex;gap:24px;font-size:14px;font-weight:500}
+nav a{text-decoration:none;color:var(--soft)}
+nav a:hover{color:var(--text);text-decoration:underline}
+.tools{display:flex;align-items:center;gap:6px}
+.tools button{font:inherit;font-size:13px;font-weight:600;background:none;color:var(--soft);border:1px solid transparent;border-radius:6px;padding:4px 8px;cursor:pointer}
+.tools button:hover{color:var(--text)}
+.tools button[aria-pressed=true]{color:var(--text);border-color:var(--line)}
+#th svg{display:block}
+.hero{padding:80px 0 48px}
+h1{font-size:clamp(40px,7vw,60px);line-height:1.1;font-weight:700;letter-spacing:-.01em;direction:ltr;text-align:start}
+[dir=rtl] h1{text-align:right}
+.hero p{max-width:620px;margin-top:20px;color:var(--soft)}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:24px;margin-top:32px}
+.btn{display:inline-block;background:var(--gold);color:#121212;padding:10px 20px;border-radius:6px;font-weight:500;text-decoration:none;transition:background-color .2s}
+.btn:hover{background:#d99c33}
+.link{font-weight:500;text-decoration:underline}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:40px}
+.tag{display:inline-flex;align-items:center;background:var(--tagbg);color:var(--tagfg);border-radius:6px;padding:4px 10px;font-size:12px;font-weight:600;letter-spacing:.05em}
+.tag::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor;margin-inline-end:8px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.about p+p{margin-top:12px}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:12px 20px;font-size:15px}
+dt{font-weight:600}
+dd{color:var(--soft)}
+.band{background:var(--band)}
+.tl{list-style:none;padding:0;border-top:1px solid var(--line)}
+.tl li{display:grid;grid-template-columns:140px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.tl time{color:var(--mid);font-size:15px}
+.tl b{font-weight:600}
+.tl span{display:block;color:var(--soft);font-size:15px}
+.note{margin-top:20px;color:var(--soft);font-size:15px}
+.head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin-bottom:24px}
+.head h2{margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:12px;text-decoration:none;transition:border-color .2s}
+.card:hover{border-color:var(--text)}
+.thumb{aspect-ratio:16/10;background:var(--band);border-radius:6px;overflow:hidden;display:grid;place-items:center;font-size:40px;font-weight:700;color:var(--line)}
+.thumb::before{content:attr(data-c)}
+.thumb:has(img)::before{content:none}
+.thumb img{grid-area:1/1;width:100%;height:100%;object-fit:cover;display:block}
+.card h3{font-size:14px;font-weight:500;margin-top:12px}
+.card p{font-size:12px;color:var(--mid)}
+.more{margin-top:24px;background:none;color:var(--text);border:1px solid var(--text);border-radius:6px;padding:10px 20px;font:inherit;font-weight:500;cursor:pointer;transition:background-color .2s,color .2s}
+.more:hover{background:var(--text);color:var(--bg)}
+#contact p{color:var(--soft);max-width:560px}
+#contact h2{margin-bottom:12px}
+#contact .mail{display:inline-block;margin-top:20px;font-size:clamp(22px,4vw,32px);font-weight:600;direction:ltr}
+.contacts{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:28px;font-size:15px}
+.contacts a{direction:ltr}
+footer{padding:24px 0;font-size:13px;color:var(--mid)}
+@media (max-width:860px){.cols{grid-template-columns:1fr;gap:40px}.grid{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){
+body{font-size:16px}
+.wrap{padding:0 20px}
+section{padding:40px 0}
+h2{font-size:24px;margin-bottom:16px}
+header .wrap{height:56px}
+#mb{display:grid;place-items:center;width:44px;height:44px;margin-inline-end:-10px;background:none;border:0;color:var(--text);cursor:pointer}
+#sheet{display:none;position:absolute;top:100%;inset-inline:0;background:var(--card);border-bottom:1px solid var(--line);padding:4px 20px 20px;z-index:5}
+#sheet.open{display:block}
+nav{flex-direction:column;gap:0;font-size:17px}
+nav a{display:block;padding:14px 0;border-bottom:1px solid var(--line);color:var(--text)}
+.tools{margin-top:16px;gap:8px}
+.tools button{min-width:44px;min-height:44px;font-size:15px}
+.hero{padding:32px 0 24px}
+h1{font-size:40px}
+.hero p{font-size:16px;margin-top:16px}
+.actions{flex-direction:column;align-items:stretch;gap:12px;margin-top:24px}
+.btn{text-align:center;padding:14px 20px}
+.link{text-align:center;padding:10px 0}
+.tags{flex-wrap:nowrap;overflow-x:auto;margin:32px -20px 0;padding:0 20px 4px;scroll-snap-type:x proximity}
+.tag{flex:none;white-space:nowrap;scroll-snap-align:start}
+.cols{gap:32px}
+dl{grid-template-columns:1fr;gap:0}
+dt{font-size:13px;color:var(--mid);margin-top:14px}
+dd{padding-bottom:12px;border-bottom:1px solid var(--line)}
+.tl li{grid-template-columns:1fr;gap:2px}
+.head{flex-direction:column;align-items:flex-start;gap:8px}
+.grid{grid-template-columns:1fr;gap:10px}
+.card{display:flex;align-items:center;gap:12px;padding:10px}
+.thumb{flex:none;width:96px;aspect-ratio:4/3;font-size:24px}
+.card h3{margin:0;font-size:15px}
+.more{width:100%;padding:14px 20px}
+#contact .mail{font-size:20px;overflow-wrap:anywhere}
+.contacts{flex-direction:column;gap:8px;margin-top:20px}
+.contacts a{display:flex;align-items:center;min-height:48px;padding:0 14px;border:1px solid var(--line);border-radius:6px;background:var(--card);text-decoration:none}
+footer{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="#top">Lecheheb Djaafar</a>
+  <button id="mb" type="button" aria-label="Menu" aria-expanded="false" aria-controls="sheet"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg></button>
+  <div id="sheet">
+  <nav><a href="#about" data-i="n1"></a><a href="#path" data-i="n2"></a><a href="#projects" data-i="n3"></a><a href="#contact" data-i="n4"></a></nav>
+  <div class="tools">
+    <button data-l="en" aria-label="English">EN</button><button data-l="fr" aria-label="Français">FR</button><button data-l="ar" aria-label="العربية">AR</button>
+    <button id="th" type="button" aria-label="Theme" title="Theme"><svg width="18" height="18" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg></button>
+  </div>
+  </div>
+</div></header>
+
+<main id="top">
+<div class="hero" id="hero"><div class="wrap">
+  <h1>Lecheheb Djaafar</h1>
+  <p data-i="hp"></p>
+  <div class="actions"><a class="btn" href="mailto:djaafardjaafarlolo@gmail.com" data-i="em"></a><a class="link" href="cv.pdf" data-i="cv"></a></div>
+  <div class="tags"><span class="tag" data-i="g1"></span><span class="tag" data-i="g2"></span><span class="tag" data-i="g3"></span><span class="tag" data-i="g4"></span><span class="tag" data-i="g5"></span></div>
+</div></div>
+
+<section id="about"><div class="wrap cols">
+  <div class="about"><h2 data-i="ah"></h2><p data-i="a1"></p><p data-i="a2"></p><p data-i="a3"></p></div>
+  <div><h2 data-i="sh"></h2><dl>
+    <dt data-i="k1"></dt><dd>Python, Django, Flask, JavaScript, HTML, CSS</dd>
+    <dt data-i="k2"></dt><dd>Flutter, Firebase</dd>
+    <dt data-i="k3"></dt><dd>SQL, NoSQL, MySQL, SQLite, Firebase</dd>
+    <dt data-i="k4"></dt><dd>ESP32, Arduino, MQTT, ThingsBoard</dd>
+    <dt data-i="k5"></dt><dd data-i="v5"></dd>
+    <dt data-i="k6"></dt><dd>Git, Docker, Linux, Jira, Trello, Word, Excel</dd>
+    <dt data-i="k7"></dt><dd data-i="v7"></dd>
+  </dl></div>
+</div></section>
+
+<section id="path" class="band"><div class="wrap">
+  <h2 data-i="eh"></h2>
+  <ul class="tl">
+    <li><time>2025 – 2026</time><div><b data-i="t1"></b><span data-i="d1"></span></div></li>
+    <li><time>2024 – 2025</time><div><b data-i="t2"></b><span data-i="d2"></span></div></li>
+    <li><time>2021 – <span data-i="now"></span></time><div><b data-i="t3"></b><span data-i="d3"></span></div></li>
+    <li><time>2022</time><div><b data-i="t4"></b><span data-i="d4"></span></div></li>
+    <li><time>2020 – 2023</time><div><b data-i="t5"></b><span data-i="d5"></span></div></li>
+  </ul>
+  <p class="note"><span data-i="cert"></span> Master in AI Engineering (Udemy, 2025), Fundamentals of Deep Learning (NVIDIA, 2024), Scientific Computing with Python (freeCodeCamp), Python.</p>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <div class="head"><h2 data-i="ph"></h2><a class="link" href="https://lechehebdjaafar.github.io/DjaafarOS-Portfolio/" data-i="pl"></a></div>
+  <div class="grid" id="grid"></div>
+  <button class="more" id="more" type="button"></button>
+</div></section>
+
+<section id="contact" class="band"><div class="wrap">
+  <h2 data-i="ch"></h2><p data-i="cp"></p>
+  <a class="mail" href="mailto:djaafardjaafarlolo@gmail.com">djaafardjaafarlolo@gmail.com</a>
+  <div class="contacts">
+    <a href="tel:+213658301420">+213 658 30 14 20</a>
+    <a href="https://www.linkedin.com/in/lecheheb-djaafar-226594348/">LinkedIn</a>
+    <a href="https://github.com/LechehebDjaafar">GitHub</a>
+    <a href="https://www.kaggle.com/djaafarlechehebdl">Kaggle</a>
+    <a href="https://www.youtube.com/@CodeCraftDL">YouTube</a>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap">© Lecheheb Djaafar</div></footer>
+
+<script>
+const D = { // [en, fr, ar]
+n1:['About','À propos','نبذة'],n2:['Experience','Parcours','الخبرة'],n3:['Projects','Projets','المشاريع'],n4:['Contact','Contact','تواصل'],
+hp:['Computer science graduate from Ouargla, Algeria. I build websites and web systems for shops, restaurants and agencies, and IoT prototypes that use AI.','Diplômé en informatique, basé à Ouargla, en Algérie. Je crée des sites et des systèmes web pour les commerces, les restaurants et les agences, ainsi que des prototypes IoT dotés d’IA.','خريج إعلام آلي من ورقلة، الجزائر. أبني مواقع وأنظمة ويب للمتاجر والمطاعم والوكالات، ونماذج إنترنت الأشياء المدعومة بالذكاء الاصطناعي.'],
+em:['Email me','M’écrire','راسلني'],cv:['Download my CV','Télécharger mon CV','حمّل سيرتي الذاتية'],
+g1:['Master’s 2025, with distinction','Master 2025, avec distinction','ماستر 2025 بتقدير امتياز'],
+g2:['30+ clients since 2021','30+ clients depuis 2021','أكثر من 30 عميلاً منذ 2021'],
+g3:['5 Startup Labels','5 Labels Startup','5 أوسمة Startup'],
+g4:['Ouargla, Algeria','Ouargla, Algérie','ورقلة، الجزائر'],
+g5:['Open to opportunities','Ouvert aux opportunités','متاح لفرص العمل'],
+ah:['About','À propos','نبذة'],
+a1:['I studied computer science at Kasdi Merbah University in Ouargla and graduated with a Master’s in 2025, with distinction.','J’ai étudié l’informatique à l’Université Kasdi Merbah de Ouargla et obtenu mon Master en 2025, avec distinction.','درست الإعلام الآلي في جامعة قاصدي مرباح بورقلة، وتخرجت بشهادة ماستر سنة 2025 بتقدير امتياز.'],
+a2:['Since 2021 I have worked as a freelance developer, building more than 30 applications for over 30 clients. My graduation project was a working prototype of a smart irrigation system for arid regions, combining IoT, AI and solar energy. It earned a Startup Label.','Je travaille comme développeur freelance depuis 2021 : plus de 30 applications pour plus de 30 clients. Mon projet de fin d’études était un prototype fonctionnel de système d’irrigation intelligent pour zones arides, combinant IoT, IA et énergie solaire. Il a obtenu un Label Startup.','أعمل مطوّراً مستقلاً منذ 2021، وأنجزت أكثر من 30 تطبيقاً لأكثر من 30 عميلاً. كان مشروع تخرجي نموذجاً أولياً يعمل لنظام ري ذكي للمناطق الجافة، يجمع بين إنترنت الأشياء والذكاء الاصطناعي والطاقة الشمسية، وحصل على وسم Startup.'],
+a3:['I also served my national service in an archive department, where I sorted, inventoried and digitized records.','J’ai effectué mon service national dans un service d’archives, où j’ai trié, inventorié et numérisé des documents.','أديت الخدمة الوطنية في مصلحة أرشيف، حيث فرزت الوثائق وجردتها ورقمنتها.'],
+sh:['Skills','Compétences','المهارات'],
+k1:['Web','Web','الويب'],k2:['Mobile','Mobile','الموبايل'],k3:['Databases','Bases de données','قواعد البيانات'],k4:['IoT','IoT','إنترنت الأشياء'],k5:['AI','IA','الذكاء الاصطناعي'],k6:['Tools','Outils','الأدوات'],k7:['Languages','Langues','اللغات'],
+v5:['Deep learning, neural networks','Deep learning, réseaux de neurones','التعلم العميق، الشبكات العصبية'],
+v7:['Arabic (native), English (B2), French (basic)','Arabe (langue maternelle), anglais (B2), français (notions)','العربية (الأم)، الإنجليزية (B2)، الفرنسية (أساسي)'],
+eh:['Experience and education','Expérience et formation','الخبرة والتكوين'],now:['today','aujourd’hui','اليوم'],
+t1:['National service, archive management','Service national, gestion des archives','الخدمة الوطنية، تسيير الأرشيف'],d1:['Sorted, inventoried and digitized archives, and ran the archive department.','Tri, inventaire et numérisation des archives ; gestion du service d’archives.','فرز وجرد ورقمنة الأرشيف، وتسيير مصلحة الأرشيف.'],
+t2:['Master’s in Computer Science','Master en Informatique','ماستر في الإعلام الآلي'],d2:['Kasdi Merbah University, Ouargla. Graduated with distinction.','Université Kasdi Merbah, Ouargla. Diplômé avec distinction.','جامعة قاصدي مرباح، ورقلة. تخرجت بتقدير امتياز.'],
+t3:['Freelance developer','Développeur freelance','مطوّر مستقل'],d3:['Mostaql, Upwork and Fiverr. 30+ applications for 30+ clients.','Mostaql, Upwork et Fiverr. Plus de 30 applications pour plus de 30 clients.','Mostaql وUpwork وFiverr. أكثر من 30 تطبيقاً لأكثر من 30 عميلاً.'],
+t4:['IT intern at Sonatrach','Stagiaire informatique chez Sonatrach','متربص في الإعلام الآلي بسوناطراك'],d4:['Two 15-day internships, in Hassi Messaoud and Berkaoui.','Deux stages de 15 jours, à Hassi Messaoud et Berkaoui.','تربصان مدة كل منهما 15 يوماً، في حاسي مسعود وبركاوي.'],
+t5:['Bachelor’s in Computer Science','Licence en Informatique','ليسانس في الإعلام الآلي'],d5:['Kasdi Merbah University, Ouargla.','Université Kasdi Merbah, Ouargla.','جامعة قاصدي مرباح، ورقلة.'],
+cert:['Certificates:','Certifications :','الشهادات:'],
+ph:['Projects','Projets','المشاريع'],pl:['Open my interactive portfolio','Ouvrir mon portfolio interactif','افتح معرض أعمالي التفاعلي'],
+more:['Show all {n} projects','Voir les {n} projets','عرض كل المشاريع ({n})'],less:['Show fewer projects','Voir moins','عرض أقل'],
+ch:['Contact','Contact','تواصل'],cp:['For a project, a job or a question, write to me. I answer in Arabic, English or French.','Pour un projet, un emploi ou une question, écrivez-moi. Je réponds en arabe, anglais ou français.','لمشروع أو وظيفة أو سؤال، راسلني. أرد بالعربية أو الإنجليزية أو الفرنسية.'],
+web:['Website','Site web','موقع ويب'],shop:['Online store','Boutique en ligne','متجر إلكتروني'],app:['Web platform','Plateforme web','منصة ويب'],chess:['Chess','Échecs','شطرنج'],tpl:['Template','Modèle','قالب'],proj:['Graduation project','Projet de fin d’études','مشروع التخرج'],
+title:['Lecheheb Djaafar — Computer Science Graduate and Full-Stack Developer','Lecheheb Djaafar — Diplômé en informatique et développeur full-stack','Lecheheb Djaafar — خريج إعلام آلي ومطوّر ويب']
+};
+const B='https://lechehebdjaafar.github.io/', LANGS=['en','fr','ar'];
+// [title, type, image file, slug or full URL, extra]
+const P=[
+['Smart pivot irrigation','proj','Photo du prototype.png',B+'smart_pivot/','Python, ESP32, TensorFlow'],
+['Crave Cafe','web','proj1.png','Crave-Cafe'],['ChronoLux','shop','proj2.png','ChronoLux'],['GreenEats','web','proj4.png','GreenEats'],
+['DomiLux','web','proj6.png','web-DomiLux'],['IF-PuB','web','IF-PUB.png','IF-PuB'],['SoundVibe','shop','headPhone.png','SoundVibe'],
+['WalkTrend','shop','WalkTrend.png','WalkTrend'],['EasyBank','web','EasyBank.png','EasyBank'],['GreenVibe','web','proj5.png','GreenVibe'],
+['Swiftly','web','proj8.png','Swiftly'],['BeachEscape','web','BeachEscape.png','BeachEscape'],['IronPulse','web','Gym.png','IronPulse'],
+['GameZone','web','GameZone.png','GameZone'],['Photographer','web','Photography.png','Web-Photographer'],['Mendjadid','web','web_mendjadid.png','web_mendjadid'],
+['InvestMe','web','web_InvestMe.png','web_InvestMe'],['Rafik Tawriq','app','rafik-tawriq-platform.png','rafik-tawriq-platform'],['HelpMe','app','webHelpMe.png','webHelpMe'],
+['The Reciters Library','app','The-Reciters-Library_V_0.1.png','The-Reciters-Library_V_0.1'],['DjaafarBook','app','DjaafarBook.png','DjaafarBook'],
+['Chess game','chess','Web_professional-chess-game.png',B+'DjaafarOS-Portfolio/','JavaScript'],['Fenrix','chess','fenrix.png','https://github.com/LechehebDjaafar/fenrix','JavaScript'],
+['Chess Opponent Scout','chess','chess-opponent-scout.png','chess-opponent-scout'],['Developer portfolio','tpl','Devloper-Portfolio.png','Devloper-Portfolio'],['Portfolio 2','tpl','portfolio2.png','Portfolio-2']
+];
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const html=document.documentElement;
+let lang='en', all=false;
+const SHOW=9, grid=$('#grid'), more=$('#more');
+
+/* projects */
+function card(p,i){
+  const a=document.createElement('a');
+  a.className='card'; a.target='_blank'; a.rel='noopener';
+  a.href=p[3].startsWith('http')?p[3]:B+p[3]+'/';
+  const t=document.createElement('div'); t.className='thumb'; t.dataset.c=p[0][0];
+  const img=new Image(); img.alt=''; img.loading='lazy';
+  img.onload=()=>t.appendChild(img);
+  img.src='images/projects/'+encodeURIComponent(p[2]);
+  a.append(t);
+  a.insertAdjacentHTML('beforeend','<h3></h3><p></p>');
+  $('h3',a).textContent=p[0];
+  $('p',a).textContent=D[p[1]][LANGS.indexOf(lang)]+(p[4]?' · '+p[4]:'');
+  return a;
+}
+function render(){
+  const list=all?P:P.slice(0,SHOW), li=LANGS.indexOf(lang);
+  grid.replaceChildren(...list.map(card));
+  more.textContent=D[all?'less':'more'][li].replace('{n}',P.length);
+}
+more.onclick=()=>{all=!all;render()};
+
+/* language */
+function setLang(l){
+  lang=l; const li=LANGS.indexOf(l);
+  html.lang=l; html.dir=l==='ar'?'rtl':'ltr'; document.title=D.title[li];
+  $$('[data-i]').forEach(e=>e.textContent=D[e.dataset.i][li]);
+  $$('[data-l]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===l));
+  try{localStorage.setItem('lang',l)}catch(e){}
+  render();
+}
+$$('[data-l]').forEach(b=>b.onclick=()=>setLang(b.dataset.l));
+
+/* mobile menu */
+const mb=$('#mb'), sheet=$('#sheet');
+function menu(open){sheet.classList.toggle('open',open);mb.setAttribute('aria-expanded',open)}
+mb.onclick=()=>menu(!sheet.classList.contains('open'));
+$$('#sheet nav a').forEach(a=>a.addEventListener('click',()=>menu(false)));
+addEventListener('keydown',e=>{if(e.key==='Escape')menu(false)});
+
+/* theme */
+$('#th').onclick=()=>{
+  html.classList.add('sw'); setTimeout(()=>html.classList.remove('sw'),450);
+  const t=html.dataset.theme==='dark'?'light':'dark'; html.dataset.theme=t;
+  try{localStorage.setItem('theme',t)}catch(e){}
+};
+
+let saved='en'; try{saved=localStorage.getItem('lang')||(/^ar/.test(navigator.language)?'ar':/^fr/.test(navigator.language)?'fr':'en')}catch(e){}
+setLang(saved);
+</script>
+</body>
+</html>
